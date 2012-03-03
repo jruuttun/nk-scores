@@ -73,25 +73,25 @@ chorusFive = \lyricmode {
   \new ChoirStaff <<
     \new Staff << 
       \set Staff.instrumentName = "Тенор"
-      \new Voice = "Tenori" { \clef treble \globals \repeat volta 5 \tenor }
-      \new Lyrics \lyricsto "Tenori" {	\introOne \verseOne \chorusOne \chorusOne}
-      \new Lyrics \lyricsto "Tenori" {	\introTwo \verseTwo \chorusTwo \chorusTwo}
-      \new Lyrics \lyricsto "Tenori" {	\introThree \verseThree \chorusThree \chorusThree}
-      \new Lyrics \lyricsto "Tenori" {	\introFour \verseFour \chorusFour \chorusFour}
-      \new Lyrics \lyricsto "Tenori" {	\introFive \verseFive \chorusFive \chorusFive}
+      \new Voice = "Tenor" { \clef treble \globals \repeat volta 5 \tenor }
+      \new Lyrics \lyricsto "Tenor" {	\introOne \verseOne \chorusOne \chorusOne}
+      \new Lyrics \lyricsto "Tenor" {	\introTwo \verseTwo \chorusTwo \chorusTwo}
+      \new Lyrics \lyricsto "Tenor" {	\introThree \verseThree \chorusThree \chorusThree}
+      \new Lyrics \lyricsto "Tenor" {	\introFour \verseFour \chorusFour \chorusFour}
+      \new Lyrics \lyricsto "Tenor" {	\introFive \verseFive \chorusFive \chorusFive}
     >>
     \new Staff << 
       \set Staff.instrumentName = "Баритон"
-      \new Voice = "Baritoni" { \clef bass \globals \barytone }
+      \new Voice = "Barytone" { \clef bass \globals \barytone }
     >>
     \new Staff << 
       \set Staff.instrumentName = "Бас"
-      \new Voice = "Basso" { \clef bass \globals \bass }
-      \new Lyrics \lyricsto "Basso" {  \verseOne \chorusOne \chorusOne }
-      \new Lyrics \lyricsto "Basso" {  \verseTwo \chorusTwo \chorusTwo }
-      \new Lyrics \lyricsto "Basso" {  \verseThree \chorusThree \chorusThree }
-      \new Lyrics \lyricsto "Basso" {  \verseFour \chorusFour \chorusFour }
-      \new Lyrics \lyricsto "Basso" {  \verseFive \chorusFive \chorusFive }
+      \new Voice = "Bass" { \clef bass \globals \bass }
+      \new Lyrics \lyricsto "Bass" {  \verseOne \chorusOne \chorusOne }
+      \new Lyrics \lyricsto "Bass" {  \verseTwo \chorusTwo \chorusTwo }
+      \new Lyrics \lyricsto "Bass" {  \verseThree \chorusThree \chorusThree }
+      \new Lyrics \lyricsto "Bass" {  \verseFour \chorusFour \chorusFour }
+      \new Lyrics \lyricsto "Bass" {  \verseFive \chorusFive \chorusFive }
     >> 
   >>
 } 
