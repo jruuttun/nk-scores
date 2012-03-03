@@ -4,6 +4,6 @@ all: notforme.pdf
 	lilypond $<
 
 clean:
-	rm -f *.pdf *.ps
+	rm -f *.pdf *.ps *.midi *~
 
 .PHONY: clean
