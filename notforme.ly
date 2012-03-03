@@ -2,7 +2,7 @@
 
 \header {
   title = "Не для меня"
-  subtitle = "As perfomed by 'Averi Torvonen ja Nakkailevat kasakat'"
+  subtitle = "в исполнении ансамбля «Averi Torvonen ja Nakkailevat kasakat»"
 %  composer = "Säveltäjä"
 %  poet = "Sanoittaja"
   tagline = ##f
@@ -10,7 +10,7 @@
 
 globals = { \key e \minor \time 2/4 }
 
-tenor = \relative c''{
+tenor = \relative c' {
   \partial 4
   b8\mp^\markup {\italic Rubato }
   g16 fis16 | e4 r8 r16 e16 | b'8 ( a16 b16 c8) b16( a16) g4\fermata r8 % intro
@@ -74,7 +74,7 @@ chorusFive = \lyricmode {
     \new Staff << 
       \set Staff.instrumentName = "Тенор"
       \set Staff.midiInstrument = "choir aahs"
-      \new Voice = "Tenor" { \clef treble \globals \repeat volta 5 \tenor }
+      \new Voice = "Tenor" { \clef "treble_8" \globals \repeat volta 5 \tenor }
       \new Lyrics \lyricsto "Tenor" {	\introOne \verseOne \chorusOne \chorusOne}
       \new Lyrics \lyricsto "Tenor" {	\introTwo \verseTwo \chorusTwo \chorusTwo}
       \new Lyrics \lyricsto "Tenor" {	\introThree \verseThree \chorusThree \chorusThree}
