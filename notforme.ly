@@ -100,3 +100,7 @@ chorusFive = \lyricmode {
   \midi {}
   \layout {}
 } 
+
+\paper {
+  ragged-bottom = ##t
+}
