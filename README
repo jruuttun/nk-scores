@@ -1,0 +1,4 @@
+To build the pdf version of "Not for me", install lilypond and try
+
+$ make
+
