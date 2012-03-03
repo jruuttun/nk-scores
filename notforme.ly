@@ -72,7 +72,7 @@ chorusFive = \lyricmode {
 \score {
   \new ChoirStaff <<
     \new Staff << 
-      \set Staff.instrumentName = #"Тенор"
+      \set Staff.instrumentName = "Тенор"
       \new Voice = "Tenori" { \clef treble \globals \repeat volta 5 \tenor }
       \new Lyrics \lyricsto "Tenori" {	\introOne \verseOne \chorusOne \chorusOne}
       \new Lyrics \lyricsto "Tenori" {	\introTwo \verseTwo \chorusTwo \chorusTwo}
@@ -81,11 +81,11 @@ chorusFive = \lyricmode {
       \new Lyrics \lyricsto "Tenori" {	\introFive \verseFive \chorusFive \chorusFive}
     >>
     \new Staff << 
-      \set Staff.instrumentName = #"Баритон"
+      \set Staff.instrumentName = "Баритон"
       \new Voice = "Baritoni" { \clef bass \globals \barytone }
     >>
     \new Staff << 
-      \set Staff.instrumentName = #"Бас"
+      \set Staff.instrumentName = "Бас"
       \new Voice = "Basso" { \clef bass \globals \bass }
       \new Lyrics \lyricsto "Basso" {  \verseOne \chorusOne \chorusOne }
       \new Lyrics \lyricsto "Basso" {  \verseTwo \chorusTwo \chorusTwo }
