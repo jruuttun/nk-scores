@@ -8,9 +8,9 @@
   tagline = ##f
 }
 
-globals = { \key e \minor \time 2/4 \clef bass }
+globals = { \key e \minor \time 2/4 }
 
-tenor = \relative c'{
+tenor = \relative c''{
   \partial 4
   b8\mp^\markup {\italic Rubato }
   g16 fis16 | e4 r8 r16 e16 | b'8 ( a16 b16 c8) b16( a16) g4\fermata r8 % intro
@@ -73,7 +73,7 @@ chorusFive = \lyricmode {
   \new ChoirStaff <<
     \new Staff << 
       \set Staff.instrumentName = #"Тенор"
-      \new Voice = "Tenori" { \globals \repeat volta 5 \tenor }
+      \new Voice = "Tenori" { \clef treble \globals \repeat volta 5 \tenor }
       \new Lyrics \lyricsto "Tenori" {	\introOne \verseOne \chorusOne \chorusOne}
       \new Lyrics \lyricsto "Tenori" {	\introTwo \verseTwo \chorusTwo \chorusTwo}
       \new Lyrics \lyricsto "Tenori" {	\introThree \verseThree \chorusThree \chorusThree}
@@ -82,11 +82,11 @@ chorusFive = \lyricmode {
     >>
     \new Staff << 
       \set Staff.instrumentName = #"Баритон"
-      \new Voice = "Baritoni" { \globals \barytone }
+      \new Voice = "Baritoni" { \clef bass \globals \barytone }
     >>
     \new Staff << 
       \set Staff.instrumentName = #"Бас"
-      \new Voice = "Basso" { \globals \bass }
+      \new Voice = "Basso" { \clef bass \globals \bass }
       \new Lyrics \lyricsto "Basso" {  \verseOne \chorusOne \chorusOne }
       \new Lyrics \lyricsto "Basso" {  \verseTwo \chorusTwo \chorusTwo }
       \new Lyrics \lyricsto "Basso" {  \verseThree \chorusThree \chorusThree }
@@ -94,4 +94,4 @@ chorusFive = \lyricmode {
       \new Lyrics \lyricsto "Basso" {  \verseFive \chorusFive \chorusFive }
     >> 
   >>
-}
+} 
