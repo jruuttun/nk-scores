@@ -34,10 +34,10 @@ bass = 	\relative c {
 }
 
 introOne = \lyricmode { Не для ме -- ня при -- дёт __ вес -- на, }
-verseOne = \lyricmode { не для ме -- ня  Дон ра -- зо -- льёт -- ся. }
+verseOne = \lyricmode { Не для ме -- ня  Дон ра -- зо -- льёт -- ся. }
 chorusOne = \lyricmode {
-  и серд -- це ра -- дост -- но за -- бьё -- тся 
-  с_вос -- тор -- гом чувств не для ме -- ня.
+  И серд -- це ра -- дост -- но за -- бьё -- тся 
+  С_вос -- тор -- гом чувств не для ме -- ня.
 }
 
 introTwo = \lyricmode { Не для ме -- ня цве -- тут __ са -- ды, }
@@ -68,7 +68,7 @@ chorusFive = \lyricmode {
   Та -- ка -- я жизнь, брат, ждёт ме -- ня.
 }
 
-hoi = \lyricmode { Hoi -- oi! } % FIXME
+hoi = \lyricmode { Ой -- ой! }
 
 \score {
   \new ChoirStaff <<
