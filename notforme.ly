@@ -104,4 +104,7 @@ hoi = \lyricmode { Ой -- ой! }
 
 \paper {
   ragged-bottom = ##t
+  markup-system-spacing #'padding = #5  % between title and staff group
+  system-system-spacing #'padding = #10 % between staff groups
 }
+
