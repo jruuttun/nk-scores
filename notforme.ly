@@ -29,7 +29,7 @@ barytone = \relative c {
 bass = 	\relative c {
   \partial 4 r4
   R2*2 r4 r8 d8|g,8 g a b|c a b4|e4 r4 % verse
-  r8 g,8\f g g|c8 c c c|d2|e8 e8 a,8 a8|b8. b16 \times 2/3 {b4 b8}|e4. r8 % chorus
+  r8 g,8\f g g|c8 c c c|d2|e8 e8 a,8 a8|b8. b16 \times 2/3 {b4 b8}|e8 e8 e8 r8 % chorus
   r8 g,8 g g|c8 c c c|d2|e8 e8 a,8 a8|b8. b16\sp \times 2/3 {b4 b8}|e2 % chorus
 }
 
@@ -68,6 +68,7 @@ chorusFive = \lyricmode {
   Та -- ка -- я жизнь, брат, ждёт ме -- ня.
 }
 
+hoi = \lyricmode { Hoi -- oi! } % FIXME
 
 \score {
   \new ChoirStaff <<
@@ -90,11 +91,11 @@ chorusFive = \lyricmode {
       \set Staff.instrumentName = "Бас"
       \set Staff.midiInstrument = "choir aahs"
       \new Voice = "Bass" { \clef bass \globals \bass }
-      \new Lyrics \lyricsto "Bass" {  \verseOne \chorusOne \chorusOne }
-      \new Lyrics \lyricsto "Bass" {  \verseTwo \chorusTwo \chorusTwo }
-      \new Lyrics \lyricsto "Bass" {  \verseThree \chorusThree \chorusThree }
-      \new Lyrics \lyricsto "Bass" {  \verseFour \chorusFour \chorusFour }
-      \new Lyrics \lyricsto "Bass" {  \verseFive \chorusFive \chorusFive }
+      \new Lyrics \lyricsto "Bass" {  \verseOne \chorusOne \hoi \chorusOne }
+      \new Lyrics \lyricsto "Bass" {  \verseTwo \chorusTwo \hoi \chorusTwo }
+      \new Lyrics \lyricsto "Bass" {  \verseThree \chorusThree \hoi \chorusThree }
+      \new Lyrics \lyricsto "Bass" {  \verseFour \chorusFour \hoi \chorusFour }
+      \new Lyrics \lyricsto "Bass" {  \verseFive \chorusFive \hoi \chorusFive }
     >> 
   >>
   \midi {}
