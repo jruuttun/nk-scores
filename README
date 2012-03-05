@@ -1,4 +1,5 @@
-To build the pdf version of "Не для меня", install lilypond and try
+To build the pdf version of "Не для меня", install lilypond (version
+2.14.2 or newer) and try
 
 $ make
 
