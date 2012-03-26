@@ -34,7 +34,7 @@ barytone = \relative c {
 }
 
 barytoneEnding = \relative c {
-  b4\! g4|d'8 d d d|a'8( g8) e8. a16|g4( g8) g8|d8. d16 \times 2/3 {d8( d8) d8}|e2 
+  b'4\! b4|c8 c b b|b8( a8) e8. a16|g4( g8) g8|d8. d16 \times 2/3 {d8( d8) d8}|e2 
 }
 
 bass = 	\relative c {
