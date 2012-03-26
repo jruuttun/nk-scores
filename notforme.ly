@@ -34,7 +34,7 @@ barytone = \relative c {
 }
 
 barytoneEnding = \relative c {
-  b4\! g4|d'8 d d d|c4 c8 c|g'4( g8) g8|d8. d16\sp \times 2/3 {d8( d8) d8}|e2 
+  b4\! g4|d'8 d d d|c4 c8 c|g'4( g8) g8|d8. d16 \times 2/3 {d8( d8) d8}|e2 
 }
 
 bass = 	\relative c {
@@ -45,7 +45,7 @@ bass = 	\relative c {
 }
 
 bassEnding = \relative c {
-  g4 g|gis8 gis gis gis|a4 a8 a8|c4( g8) a8 |b8. b16\sp \times 2/3 {b4 b8}|e,2 
+  g4 g|gis8 gis gis gis|a4 a8 a8|c4( g8) a8 |b8. b16 \times 2/3 {b4 b8}|e,2 
 }
 
 %TODO fraasien alkukirjaimet ym.
