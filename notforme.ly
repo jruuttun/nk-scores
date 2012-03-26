@@ -48,7 +48,7 @@ bassEnding = \relative c {
   g4 g|gis8 gis gis gis|a4 a8 a8|c4( g8) a8 |b8. b16\sp \times 2/3 {b4 b8}|e,2 
 }
 
-
+%TODO fraasien alkukirjaimet ym.
 introOne = \lyricmode { Не для ме -- ня при -- дёт __ вес -- на, }
 verseOne = \lyricmode { Не для ме -- ня  Дон ра -- зо -- льёт -- ся. }
 chorusOne = \lyricmode {
