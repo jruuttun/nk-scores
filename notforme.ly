@@ -20,7 +20,7 @@ tenor = \relative c' {
   d'8  | \mark \markup {\musicglyph #"scripts.coda"} d4\! d16( c16 b8)|e8 e e e|d( c) b a e'4( e16 d16) c8|b8. b16\sp \times 2/3 {a8( g8) fis8}|e2 % chorus
 }
 
-%TODO esitysohjeet isolla?
+%TODO esitysohjeet isolla + ekan säkeistö unisono?
 tenorEnding = \relative c' {
   \mark \markup {\musicglyph #"scripts.coda" } 
   d4^\markup{\italic {espansivo e meno mosso}}\!\ff\glissando g,8( f'8) |e8 e e e|d( c) b a |\appoggiatura fis' e4( e8) c8|b8. fis'16 \times 2/3 {fis16( e16 d8) fis8}|\appoggiatura fis e2 \bar "|."
