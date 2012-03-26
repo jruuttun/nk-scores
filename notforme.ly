@@ -1,4 +1,5 @@
 \version "2.14.2"
+\pointAndClickOff
 
 \header {
   title = "Не для меня"
