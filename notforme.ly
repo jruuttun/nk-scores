@@ -13,16 +13,17 @@ globals = { \key e \minor \time 2/4 }
 
 tenor = \relative c' {
   \partial 4
-  b8\mp^\markup {\italic Rubagto }
+  b8\mp^\markup {\italic rubato }
   g16 fis16 | e4 r8 r16 e16 | b'8 ( a16 b16 c8) b16( a16) g4\fermata r8 % intro
   d\<^\markup {\italic "A tempo" } | g d' c b\! | a\> g b( a) | e4\! r8 % verse
   d'8\f|d4 g,4|e'8 e e e|d( c) b a g4( c8) c8|b8. b16 \times 2/3 {a8( g8) fis8}|e4.\< % chorus 
   d'8  | \mark \markup {\musicglyph #"scripts.coda"} d4\! d16( c16 b8)|e8 e e e|d( c) b a e'4( e16 d16) c8|b8. b16\sp \times 2/3 {a8( g8) fis8}|e2 % chorus
 }
 
+%TODO esitysohjeet isolla?
 tenorEnding = \relative c' {
-  \mark \markup {\musicglyph #"scripts.coda"} 
-  d4\! d16( c16 b8)|e8 e e e|d( c) b a e'4( e16 d16) c8|b8. b16\sp \times 2/3 {a8( g8) fis8}|e2 \bar "|."
+  \mark \markup {\musicglyph #"scripts.coda" } 
+  d4^\markup{\italic {espansivo e meno mosso}}\!\ff\glissando g,8( f'8) |e8 e e e|d( c) b a |\appoggiatura fis' e4( e8) c8|b8. fis'16 \times 2/3 {fis16( e16 d8) fis8}|\appoggiatura fis e2 \bar "|."
 }
 
 barytone = \relative c {
@@ -33,7 +34,7 @@ barytone = \relative c {
 }
 
 barytoneEnding = \relative c {
-  b4\! g4|c8 c g a|b( a) g fis|g4( a8) a8|g8. g16\sp \times 2/3 {fis8( e8) dis8}|e2 
+  b4\! g4|d'8 d d d|c4 c8 c|g'4( g8) g8|d8. d16\sp \times 2/3 {d8( d8) d8}|e2 
 }
 
 bass = 	\relative c {
@@ -44,7 +45,7 @@ bass = 	\relative c {
 }
 
 bassEnding = \relative c {
-  r8 g8 g g|c8 c c c|d2|e8 e8 a,8 a8|b8. b16\sp \times 2/3 {b4 b8}|e2 
+  g4 g|gis8 gis gis gis|a4 a8 a8|c4( g8) a8 |b8. b16\sp \times 2/3 {b4 b8}|e,2 
 }
 
 
@@ -111,7 +112,7 @@ skipit = \lyricmode { _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ }
       \new Lyrics \lyricsto "Bass" {  \verseTwo \chorusTwo \hoi \chorusTwo }
       \new Lyrics \lyricsto "Bass" {  \verseThree \chorusThree \hoi \chorusThree }
       \new Lyrics \lyricsto "Bass" {  \verseFour \chorusFour \hoi \chorusFour }
-      \new Lyrics \lyricsto "Bass" {  \verseFive И \chorusFive \hoi \skipit _ И \chorusFive }
+      \new Lyrics \lyricsto "Bass" {  \verseFive И \chorusFive \hoi \skipit _ \chorusFive }
     >> 
   >>
   \midi {}
