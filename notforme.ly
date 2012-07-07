@@ -64,14 +64,14 @@ chorusTwo = \lyricmode {
 }
 
 introThree = \lyricmode { Не для ме -- ня те -- кут __ ру -- чьи, }
-verseThree = \lyricmode { Бе -- гут ал -- маз -- ны -- ми ру -- чья -- ми. }
+verseThree = \lyricmode { Бе -- гут ал -- маз -- ны -- ми стру -- я -- ми. }
 chorusThree = \lyricmode { 
   Там де -- ва с_чёр -- ны -- ми бро -- вя -- ми,
   О -- на рас -- тёт не для ме -- ня.
 }
 
 introFour = \lyricmode { Не для ме -- ня цер -- ков __ ный звон, }
-verseFour = \lyricmode { За стол род -- ня вся со -- бер -- ёт -- ся, }
+verseFour = \lyricmode { За стол род -- ня вся со -- бе -- рёт -- ся, }
 chorusFour = \lyricmode { 
   «Хрис -- тос Вос -- крес!» из уст по -- льёт -- ся
   В_пас -- халь -- ный день не для ме -- ня.
