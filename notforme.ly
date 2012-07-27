@@ -17,13 +17,13 @@ tenor = \relative c' {
   g16 fis16 | e4 r8 r16 e16 | b'8 ( a16 b16 c8) b16( a16) g4\fermata r8 % intro
   d\<^\markup {\italic "a tempo" } | g d' c b\! | a\> g b( a) | e4\! r8 % verse
   d'8\f|d4 g,4|e'8 e e e|d( c) b a g4( c8) c8|b8. b16 \times 2/3 {a8( g8) fis8}|e4.\< % chorus 
-  d'8  | \mark \markup {\musicglyph #"scripts.coda"} d4\! d16( c16 b8)|e8 e e e|d( c) b a e'4( e16 d16) c8|b8. b16\sp \times 2/3 {a8( g8) fis8}|e2 % chorus
+  d'8  | \mark \markup {\musicglyph #"scripts.coda"} d4\! d16( c16 b8)|e8 e e e|d( c) b a e'4~ ( e16 d16) c8|b8. b16\sp \times 2/3 {a8( g8) fis8}|e2 % chorus
 }
 
 %TODO esitysohjeet isolla + ekan säkeistö unisono?
 tenorEnding = \relative c' {
   \mark \markup {\musicglyph #"scripts.coda" } 
-  d4^\markup{\italic {espansivo e meno mosso}}\!\ff\glissando g,8( f'8) |e8 e e e|d( c) b8. fis'16 |\appoggiatura fis e4( e8) c8|b8. fis'16 \times 2/3 {fis16( e16 d8) fis8}|\appoggiatura fis e2 \bar "|."
+  d4^\markup{\italic {espansivo e meno mosso}}\!\ff\glissando g,8( f'8) |e8 e e e|d( c) b8. fis'16 |\appoggiatura fis e4( e8) c8|b8. b16 \times 2/3 {fis'16( e16 d8) fis8}|\appoggiatura fis e2 \bar "|."
 }
 
 barytone = \relative c {
@@ -34,7 +34,7 @@ barytone = \relative c {
 }
 
 barytoneEnding = \relative c {
-  b'4\! b4|c8 c b b|b8( a8) e8. a16|g4( g8) g8|fis8. d16 \times 2/3 {d8( d8) d8}|e2 
+  b'4\! b4|c8 c b b|b8( a8) e8. a16|g4( g8) g8|fis8. d16 \times 2/3 {d4 d8}|e2 
 }
 
 bass = 	\relative c {
