@@ -29,8 +29,8 @@ tenorEnding = \relative c' {
 barytone = \relative c {
   \partial 4 r4
   R2*2 r4 r8 d | g b a g | fis\> e g( fis) | e4\! r8 % verse
-  b'8\f|b4 g4|c8 c g a|b( a) g fis|g4( a8) a8|g8. g16 \times 2/3 {fis8( e8) dis8}|e4.\< % chorus
-  b'8|b4\! g4|c8 c g a|b( a) g fis|g4( a8) a8|g8. g16\sp \times 2/3 {fis8( e8) dis8}|e2 % chorus
+  b'8\f|b4 b16(a g8)|c8 c g a|b( a) g fis|g4( a8) a8|g8. g16 \times 2/3 {fis8( e8) dis8}|e4.\< % chorus
+  b'8|b4\! b16(a g8)|c8 c g a|b( a) g fis|g4( a8) a8|g8. g16\sp \times 2/3 {fis8( e8) dis8}|e2 % chorus
 }
 
 barytoneEnding = \relative c {
