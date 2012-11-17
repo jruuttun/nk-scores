@@ -1,4 +1,8 @@
-all: notforme.pdf
+all: notforme konj
+
+notforme: notforme.pdf
+
+konj: konj.pdf
 
 %.pdf: %.ly
 	lilypond $<
