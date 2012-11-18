@@ -33,18 +33,18 @@ tenorI = \relative c {
   r4 d c2 | r8 c a g d'2
   r8 d d e a, a g a | d1
 
-  d,8 e f e d4 c8 bes | a2.. r8 
+  d8 e f e d4 c8 bes | a4( d e8 d f e)
   d8 c d e f4 f8 g   | a2~a8 r d, d 
   bes'4 a g r8 a~    | a8 g f e f r d e 
-  f8 f f g a a e f   | d2~d8 r d d 
-  bes'4 a g r8 a~    | a8 g f e f r d e 
-  f8 f f g a a e f   | d1 
+  f8 f f g a a e f   | d4( e f) d8 d 
+  bes'4 a g r8 a~    | a8 g f e f r r4 
+  d4.( e8) e4 e8 f   | d1 
 
-  d8 e f e d4 c8 bes | a2.. r8 
+  d,8 e f e d4 c8 bes | a2.. r8 
   d8 c d e f4 f8 g   | a2~a8 r d, d 
   d'4 c bes r8 c~    | c8 d a g f r d e 
   f8 f f g a4 e8 f   | d2~d8 r r4
-  r1 | r2 r4 d8 e
+  R1 | r2 r4 d8 e
   f8 f f g a4 a8 g   | d'1~
 
   d4 r4 r4 c,8 bes8 | a4 d e8 d f e
@@ -63,19 +63,19 @@ tenorII = \relative c {
   g4 f e r8 f~ | f8 e d a d r d c
   bes8 bes bes bes a4 a8 a | d1
 
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 | r2 r4 d8 d
+  g4 f e r8 f~ | f8 e d a d r r4
+  R1 | d'4( c bes a8 g)
 
-  d8 e f e d4 c8 bes | a2.. r8 
-  d8 c d e f4 f8 g   | a2~a8 r d, d 
-  bes'4 a g r8 a~    | a8 g f e f r d e 
-  f8 f f g a4 e8 f   | d2~d8 r d d 
-  bes'4 a g r8 a~    | a8 g f e f r d e 
-  f8 f f g a4 e8 f   | d1 
+  d8 e f e d4 d8 d  | e4 f e8 g f e 
+  d8 c d e f4 c8 g' | a2~a8 r d, d 
+  bes'4 a g r8 a~   | a8 g f e f r d e 
+  f4 f8 g a a e f   | d2~d8 r d d 
+  bes'4 a g r8 a~   | a8 g f e f r d e 
+  f4 f8 g a a e f   | d4 a' bes8 c16( bes) a8 g
 
   d8 e f e d4 c8 bes | a2.. r8 
   d8 c d e f4 f8 g   | a2~a8 r d, d 
@@ -174,12 +174,20 @@ chorusTwo = \lyricmode {
   Толь -- ко мы с_ко -- нём по по -- лю и -- дём
   Толь -- ко мы с_ко -- нём по по -- лю и -- дём
 }
+chorusTwoTenorII = \lyricmode {
+  Толь -- ко мы с_ко -- нём по по -- лю и -- дём
+  o __
+}
 
 verseThreeTenorI = \lyricmode {
   Да на ко -- ня
   Да ты не -- си ме -- ня
   Да ой да мо -- е -- му да по -- лю по -- лю мо -- е -- му
   Да ой да мо -- е -- му да по -- лю по -- лю мо -- е -- му
+}
+verseThreeTenorII = \lyricmode {
+  Ся -- ду я вер -- хом на ко -- ня да ой да ой да
+  Ты не -- си по по -- лю ме -- ня
 }
 verseThree = \lyricmode {
   Ся -- ду я вер -- хом на ко -- ня
@@ -189,6 +197,10 @@ chorusThree = \lyricmode {
   По бес -- край -- не -- му по -- лю мо -- е -- му
   По бес -- край -- не -- му по -- лю мо -- е -- му
 }
+chorusThreeTenorII = \lyricmode {
+  По бес -- край -- не -- му по -- лю мо -- е -- му
+  По бес -- край -- не -- му по -- лю мо -- е -- му да ой да ой да
+}
 
 verseFour = \lyricmode {
   Дай -- ка я ра -- зок по -- смот -- рю
@@ -197,6 +209,10 @@ verseFour = \lyricmode {
 chorusFour = \lyricmode {
   Ай брус -- нич -- ный цвет, а -- лый да рас -- свет
   А -- ли есть то мес -- то а -- ли е -- го нет
+}
+chorusFourTenorI = \lyricmode {
+  Ай брус -- нич -- ный цвет, а -- лый да рас -- свет
+  Есть то а -- ли нет
 }
 
 verseFive = \lyricmode {
@@ -244,7 +260,7 @@ chorusSixFinalTenorI = \lyricmode {
         \verseOne \chorusOne \chorusOne
         \verseTwo \chorusTwo \chorusTwo
         \verseThreeTenorI
-        \verseFour \chorusFour \chorusFour
+        \verseFour \chorusFour \chorusFourTenorI
         \verseFive \chorusFive \chorusFiveTenorI
         \verseSixTenorI \chorusSix \chorusSixFinalTenorI
       }
@@ -255,7 +271,8 @@ chorusSixFinalTenorI = \lyricmode {
       \new Voice = "Tenor II" { \clef "treble_8" \globals \tenorII \break }
       \new Lyrics \lyricsto "Tenor II" {
         \chorusOne
-        \verseThree \chorusThree \chorusThree
+        \chorusTwoTenorII
+        \verseThreeTenorII \chorusThree \chorusThreeTenorII
         \verseFour \chorusFour \chorusFour
         \verseFive \chorusFive \chorusFive
         \verseSix \chorusSix \chorusSixFinal
