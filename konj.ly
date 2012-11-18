@@ -28,40 +28,40 @@ tenorI = \relative c {
 
   r2 r8 d' c bes | a1
   r2 r8 d d e | f4 c f2
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
+  r4 d c2 | r8 c a g d'2
+  r8 d d e a, a g a | d1
+  r4 d c2 | r8 c a g d'2
+  r8 d d e a, a g a | d1
 
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
+  d,8 e f e d4 c8 bes | a2.. r8 
+  d8 c d e f4 f8 g   | a2~a8 r d, d 
+  bes'4 a g r8 a~    | a8 g f e f r d e 
+  f8 f f g a a e f   | d2~d8 r d d 
+  bes'4 a g r8 a~    | a8 g f e f r d e 
+  f8 f f g a a e f   | d1 
 
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
+  d8 e f e d4 c8 bes | a2.. r8 
+  d8 c d e f4 f8 g   | a2~a8 r d, d 
+  d'4 c bes r8 c~    | c8 d a g f r d e 
+  f8 f f g a4 e8 f   | d2~d8 r r4
+  r1 | r2 r4 d8 e
+  f8 f f g a4 a8 g   | d'1~
 
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
-  s1 s1
+  d4 r4 r4 c,8 bes8 | a4 d e8 d f e
+  d8 c d e f4 f8 g   | a2~a8 r d, d 
+  d'4 d c r8 c~    | c8 c d c bes r bes bes 
+  bes8 bes bes bes a4 a8 a | a4 d d d
+  d4 d c4. c8~ | c8 c d c bes4\fermata d,8 e
+  f8 f f g a4 a8 g | d'1 
 }
 
 tenorII = \relative c {
-  R1*2
-  R1*2
-  R1*2
-  r1 | r2 r4 d8 d
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 | r2 r4 d8 d
   g4 f e r8 f~ | f8 e d a d r d c
-  bes8 bes bes bes a4 cis8 cis | d1
+  bes8 bes bes bes a4 a8 a | d1
 
   s1 s1
   s1 s1
@@ -94,15 +94,18 @@ tenorII = \relative c {
   d8 e f e d4 c8 bes | a2.. r8 
   d8 c d e f4 f8 g   | a2~a8 r d, d 
   bes'4 a g r8 a~    | a8 g f e f r d e 
-  f8 f f g a4 e8 f   | d2~d8 r d d 
-  bes'4 a g r8 a~    | a8 g f e f r d e 
+  f8 f f g a4 e8 f   | d2~d8 r d d
+  bes'4 a g r8 a~    | a8 g f e f4\fermata d8 e 
   f8 f f g a4 e8 f   | d1 
 }
 
 bassI = \relative c, {
-  s1 s1 s1 s1
-  s1 s1 s1 s1
-  s1 s1 s1 s1
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 | s1
 
   s1 s1 s1 s1
   s1 s1 s1 s1
@@ -126,9 +129,12 @@ bassI = \relative c, {
 }
 
 bassII = \relative c, {
-  s1 s1 s1 s1
-  s1 s1 s1 s1
-  s1 s1 s1 s1
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 R1
+  R1 | s1
 
   s1 s1 s1 s1
   s1 s1 s1 s1
@@ -172,6 +178,8 @@ chorusTwo = \lyricmode {
 verseThreeTenorI = \lyricmode {
   Да на ко -- ня
   Да ты не -- си ме -- ня
+  Да ой да мо -- е -- му да по -- лю по -- лю мо -- е -- му
+  Да ой да мо -- е -- му да по -- лю по -- лю мо -- е -- му
 }
 verseThree = \lyricmode {
   Ся -- ду я вер -- хом на ко -- ня
@@ -199,9 +207,17 @@ chorusFive = \lyricmode {
   Зо -- ло -- та -- я рожь да куд -- ря -- вый лён
   Я влюб -- лён в_те -- бя, Рос -- си -- я, влюб -- лён
 }
+chorusFiveTenorI = \lyricmode {
+  Я влюб -- лён в_те -- бя, Рос -- си -- я, влюб -- лён
+}
+
 
 verseSix = \lyricmode {
   Бу -- дет доб -- рым год хле -- бо -- роб
+  Бы -- ло вся -- ко, вся -- ко прой -- дёт
+}
+verseSixTenorI = \lyricmode {
+  Хле -- бо -- роб, да бу -- дет доб -- рым
   Бы -- ло вся -- ко, вся -- ко прой -- дёт
 }
 chorusSix = \lyricmode {
@@ -209,8 +225,12 @@ chorusSix = \lyricmode {
   Пой о том как я в_Рос -- си -- ю влюб -- лён
 }
 chorusSixFinal = \lyricmode {
-  Пой зла -- та -- я рожь, пой куд -- ря -- вый лён   
-  Мы пой -- дём с_ко -- нём по по -- лю вдво -- ём
+  Пой зла -- та -- я рожь, пой куд -- ря -- вый лён...
+  Мы и -- дём с_ко -- нём по по -- лю вдво -- ём
+}
+chorusSixFinalTenorI = \lyricmode {
+  Да пой зла -- та -- я рожь, пой куд -- ря -- вый лён...
+  Мы и -- дём с_ко -- нём по по -- лю вдво -- ём
 }
 
 
@@ -224,6 +244,9 @@ chorusSixFinal = \lyricmode {
         \verseOne \chorusOne \chorusOne
         \verseTwo \chorusTwo \chorusTwo
         \verseThreeTenorI
+        \verseFour \chorusFour \chorusFour
+        \verseFive \chorusFive \chorusFiveTenorI
+        \verseSixTenorI \chorusSix \chorusSixFinalTenorI
       }
     >>
     \new Staff << 
