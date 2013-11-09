@@ -1,5 +1,5 @@
-To build the pdf versions of "Не для меня" and "Конь" install lilypond (version
-2.14.2 or newer) and try
+To build the pdf versions of various N.K. arrangements install
+lilypond (version 2.14.2 or newer) and try
 
 $ make
 
