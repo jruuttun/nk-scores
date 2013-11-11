@@ -91,16 +91,16 @@ bIIendingIII = \lyricmode {
   \new ChoirStaff <<
     \new Staff << 
       \set Staff.instrumentName = "T1,T2"
-      \new Voice = "tI" { \clef "treble_8" \globals \voiceOne \repeat volta 3 \tI }
-      \new Voice = "tII" { \clef "treble_8" \globals \voiceTwo \repeat volta 3 \tII }
+      \new Voice = "tI" { \clef "treble_8" \globals \voiceOne \tI \bar "|." }
+      \new Voice = "tII" { \clef "treble_8" \globals \voiceTwo \tII }
       \new Lyrics \lyricsto "tI" { \txtI }
       \new Lyrics \lyricsto "tI" { \txtII }
       \new Lyrics \lyricsto "tI" { \txtIII }
     >>
     \new Staff << 
       \set Staff.instrumentName = "B1,B2"
-      \new Voice = "bI" { \clef bass \globals  \voiceOne \repeat volta 3 \bI }
-      \new Voice = "bII" { \clef bass \globals \voiceTwo \repeat volta 3 \bII }
+      \new Voice = "bI" { \clef bass \globals  \voiceOne \bI \bar "|." }
+      \new Voice = "bII" { \clef bass \globals \voiceTwo \bII }
       \new Lyrics \lyricsto "bII" { \skips \bIIendingI }
       \new Lyrics \lyricsto "bII" { \skips \bIIendingII }
       \new Lyrics \lyricsto "bII" { \skips \bIIendingIII }
