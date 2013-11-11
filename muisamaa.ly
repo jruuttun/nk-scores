@@ -9,7 +9,7 @@
   tagline = ##f
 }
 
-globals = { \key d \major \time 3/4 }
+globals = { \key c \major \time 3/4 }
 
 tI = \relative c' {
   \partial 4.
@@ -91,16 +91,16 @@ bIIendingIII = \lyricmode {
   \new ChoirStaff <<
     \new Staff << 
       \set Staff.instrumentName = "T1,T2"
-      \new Voice = "tI" { \clef "treble_8" \globals \voiceOne \tI \bar "|." }
-      \new Voice = "tII" { \clef "treble_8" \globals \voiceTwo \tII }
+      \new Voice = "tI" { \clef "treble_8" \globals \voiceOne \transpose d c \tI \bar "|." }
+      \new Voice = "tII" { \clef "treble_8" \globals \voiceTwo \transpose d c \tII }
       \new Lyrics \lyricsto "tI" { \txtI }
       \new Lyrics \lyricsto "tI" { \txtII }
       \new Lyrics \lyricsto "tI" { \txtIII }
     >>
     \new Staff << 
       \set Staff.instrumentName = "B1,B2"
-      \new Voice = "bI" { \clef bass \globals  \voiceOne \bI \bar "|." }
-      \new Voice = "bII" { \clef bass \globals \voiceTwo \bII }
+      \new Voice = "bI" { \clef bass \globals  \voiceOne \transpose d c \bI \bar "|." }
+      \new Voice = "bII" { \clef bass \globals \voiceTwo \transpose d c \bII }
       \new Lyrics \lyricsto "bII" { \skips \bIIendingI }
       \new Lyrics \lyricsto "bII" { \skips \bIIendingII }
       \new Lyrics \lyricsto "bII" { \skips \bIIendingIII }
